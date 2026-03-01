@@ -98,8 +98,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
   width: 100%;
   padding: 0.75rem 0;
   border-top: 1px solid #30363d;
@@ -112,6 +112,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  white-space: nowrap;
 }
 .pp-footer-share a { color: #58a6ff; text-decoration: none; }
 .pp-footer-share a:hover { text-decoration: underline; }
@@ -120,11 +121,9 @@
   width: 26px; height: 26px;
   border: 1px solid #30363d;
   border-radius: 4px;
-  font-size: 0.7rem;
-  font-weight: 700;
   color: #8b949e;
   text-decoration: none !important;
   transition: border-color 0.2s, color 0.2s;
-  line-height: 1;
 }
+.pp-share-btn svg { width: 13px; height: 13px; fill: currentColor; }
 .pp-share-btn:hover { border-color: #2f81f7 !important; color: #e6edf3 !important; }
