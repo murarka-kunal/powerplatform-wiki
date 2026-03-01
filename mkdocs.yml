@@ -9,21 +9,12 @@ repo_url: https://github.com/murarka-kunal/powerplatform-wiki
 theme:
   name: material
   palette:
-    - scheme: default
-      primary: deep purple
-      accent: purple
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: deep purple
-      accent: purple
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    scheme: slate
+    primary: custom
+    accent: custom
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: IBM Plex Sans
+    code: IBM Plex Mono
   features:
     - navigation.tabs
     - navigation.sections
@@ -36,6 +27,9 @@ theme:
     - toc.follow
   icon:
     repo: fontawesome/brands/github
+
+extra_css:
+  - custom.css
 
 plugins:
   - search
