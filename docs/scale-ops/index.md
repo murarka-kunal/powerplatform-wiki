@@ -20,6 +20,7 @@ tags:
 | **E** | Enablement | Training, CoE, and citizen development |
 | **O** | Operations | Day-to-day monitoring and support |
 | **P** | Performance | Capacity, optimization, and scalability |
+| **S** | Scalability | Scaling patterns and capacity planning |
 
 !!! info "Content in progress"
     Detailed guidance for each pillar is being built. Check back soon or [contribute on GitHub](https://github.com/murarka-kunal/powerplatform-wiki).
