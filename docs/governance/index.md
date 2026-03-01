@@ -19,4 +19,4 @@ Enterprise-grade governance for Microsoft Power Platform — defining ownership,
 - Compliance frameworks aligned to Power Platform
 
 !!! info "Content in progress"
-    This section is being built. Check back soon or [contribute on GitHub](https://github.com/murarka-kunal/powerplatform-wiki).
+    This section is being built. Check back soon.

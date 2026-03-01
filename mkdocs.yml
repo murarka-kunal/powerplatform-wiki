@@ -3,8 +3,6 @@ site_url: https://powerplatform.wiki
 site_description: A structured knowledge platform for enterprise-grade Microsoft Power Platform governance, architecture, and scalable implementation.
 site_author: Kunal Murarka
 
-repo_name: murarka-kunal/powerplatform-wiki
-repo_url: https://github.com/murarka-kunal/powerplatform-wiki
 
 theme:
   name: material
@@ -55,8 +53,6 @@ markdown_extensions:
 
 extra:
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/murarka-kunal/powerplatform-wiki
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/kunalmurarka/
       name: Kunal Murarka on LinkedIn

@@ -21,4 +21,4 @@ Application Lifecycle Management (ALM) and DevOps practices for Microsoft Power 
 - Power Platform Pipelines vs Azure DevOps vs GitHub Actions
 
 !!! info "Content in progress"
-    This section is being built. Check back soon or [contribute on GitHub](https://github.com/murarka-kunal/powerplatform-wiki).
+    This section is being built. Check back soon.

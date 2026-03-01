@@ -21,4 +21,4 @@ Enterprise design patterns for Microsoft Copilot Studio — building, governing,
 - Governance and monitoring for deployed agents
 
 !!! info "Content in progress"
-    This section is being built. Check back soon or [contribute on GitHub](https://github.com/murarka-kunal/powerplatform-wiki).
+    This section is being built. Check back soon.

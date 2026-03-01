@@ -21,4 +21,4 @@ Security architecture and compliance controls for Microsoft Power Platform — D
 - Compliance alignment (ISO, SOC2, GDPR)
 
 !!! info "Content in progress"
-    This section is being built. Check back soon or [contribute on GitHub](https://github.com/murarka-kunal/powerplatform-wiki).
+    This section is being built. Check back soon.

@@ -21,4 +21,4 @@ Operational visibility for Microsoft Power Platform — CoE Toolkit setup, usage
 - Power Platform Admin Center as a monitoring tool
 
 !!! info "Content in progress"
-    This section is being built. Check back soon or [contribute on GitHub](https://github.com/murarka-kunal/powerplatform-wiki).
+    This section is being built. Check back soon.

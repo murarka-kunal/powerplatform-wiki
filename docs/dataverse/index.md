@@ -21,4 +21,4 @@ Practical data modeling guidance for Microsoft Dataverse — schema design, rela
 - Performance tuning and query optimisation
 
 !!! info "Content in progress"
-    This section is being built. Check back soon or [contribute on GitHub](https://github.com/murarka-kunal/powerplatform-wiki).
+    This section is being built. Check back soon.
