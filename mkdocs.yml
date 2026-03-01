@@ -31,28 +31,12 @@ theme:
 extra_css:
   - custom.css
 
-nav:
-  - SCALE-OPS:
-    - scale-ops/index.md
-    - Stewardship: scale-ops/stewardship.md
-    - Containment: scale-ops/containment.md
-    - Automation: scale-ops/automation.md
-    - Lifecycle: scale-ops/lifecycle.md
-    - Enablement: scale-ops/enablement.md
-    - Operations: scale-ops/operations.md
-    - Performance: scale-ops/performance.md
-    - Scalability: scale-ops/scalability.md
-  - Governance: governance/index.md
-  - DevOps & ALM: devops/index.md
-  - Copilot Studio: copilot-studio/index.md
-  - Dataverse: dataverse/index.md
-  - Security: security/index.md
-  - Monitoring: monitoring/index.md
 
 plugins:
   - search
   - tags
   - meta
+  - awesome-pages
 
 markdown_extensions:
   - admonition
