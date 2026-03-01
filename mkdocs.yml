@@ -61,3 +61,46 @@ extra:
       name: Kunal Murarka on LinkedIn
 
 copyright: Built by <a href="https://www.linkedin.com/in/kunalmurarka/" target="_blank" rel="noopener">Kunal Murarka</a>
+
+nav:
+  - Home: index.html
+  - SCALE-OPS:
+    - Overview: scale-ops/index.md
+    - Stewardship: scale-ops/stewardship.md
+    - Containment: scale-ops/containment.md
+    - Automation: scale-ops/automation.md
+    - Lifecycle: scale-ops/lifecycle.md
+    - Enablement: scale-ops/enablement.md
+    - Operations: scale-ops/operations.md
+    - Performance: scale-ops/performance.md
+    - Scalability: scale-ops/scalability.md
+  - Governance:
+    - Overview: governance/index.md
+    - Environment Strategy: governance/environment-strategy.md
+    - DLP Policies: governance/dlp-policies.md
+    - Admin Roles: governance/admin-roles.md
+    - CoE Setup: governance/coe-setup.md
+  - DevOps & ALM:
+    - Overview: devops/index.md
+    - ALM Strategy: devops/alm-strategy.md
+    - Pipelines: devops/pipelines.md
+    - Branching Strategy: devops/branching.md
+  - Copilot Studio:
+    - Overview: copilot-studio/index.md
+    - Architecture: copilot-studio/architecture.md
+    - Topics & Actions: copilot-studio/topics-actions.md
+    - Governance: copilot-studio/governance.md
+  - Dataverse:
+    - Overview: dataverse/index.md
+    - Data Modeling: dataverse/data-modeling.md
+    - Performance: dataverse/performance.md
+  - Security:
+    - Overview: security/index.md
+    - DLP: security/dlp.md
+    - RBAC: security/rbac.md
+    - Conditional Access: security/conditional-access.md
+  - Monitoring:
+    - Overview: monitoring/index.md
+    - CoE Toolkit: monitoring/coe-toolkit.md
+    - Alerting: monitoring/alerting.md
+  - Changelog: changelog.md
