@@ -118,12 +118,12 @@
 .pp-footer-share a:hover { text-decoration: underline; }
 .pp-share-btn {
   display: inline-flex; align-items: center; justify-content: center;
-  width: 26px; height: 26px;
+  width: 18px; height: 18px;
   border: 1px solid #30363d;
-  border-radius: 4px;
+  border-radius: 3px;
   color: #8b949e;
   text-decoration: none !important;
   transition: border-color 0.2s, color 0.2s;
 }
-.pp-share-btn svg { width: 13px; height: 13px; fill: currentColor; }
+.pp-share-btn svg { width: 9px; height: 9px; fill: currentColor; }
 .pp-share-btn:hover { border-color: #2f81f7 !important; color: #e6edf3 !important; }
