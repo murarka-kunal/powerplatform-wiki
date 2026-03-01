@@ -55,6 +55,7 @@ markdown_extensions:
       permalink: true
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/kunalmurarka/
