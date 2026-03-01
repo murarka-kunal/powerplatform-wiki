@@ -1,53 +1,115 @@
-# Welcome to PowerPlatform Wiki
+---
+hide:
+  - navigation
+  - toc
+---
 
-Your community reference for **Microsoft Power Platform** — practical guides, patterns, and best practices for makers and developers.
+# PowerPlatform.wiki
+
+**A structured knowledge platform for enterprise-grade Microsoft Power Platform governance, architecture, and scalable implementation.**
 
 ---
 
-## What is Power Platform?
+## 🎯 Purpose
 
-Microsoft Power Platform is a suite of low-code/no-code tools that lets you build apps, automate workflows, analyse data, and create websites — all connected to Microsoft 365, Azure, and hundreds of third-party services.
+PowerPlatform.wiki provides practical, implementation-focused guidance for:
+
+- Enterprise architects
+- Power Platform platform owners
+- Governance & security leads
+- DevOps engineers
+- Citizen development program managers
+
+This is not a conceptual blog.
+It is a structured reference designed for real-world enterprise environments.
+
+---
+
+## 🧭 What You'll Find Here
+
+This platform is organized around actionable domains:
+
+| Domain | Description |
+|--------|-------------|
+| 🏛 Governance Operating Models | Policies, roles, and enforcement at scale |
+| 🌍 Environment & Tenant Strategy | Isolation, segmentation, and lifecycle |
+| ⚙️ DevOps & ALM Patterns | Pipelines, source control, and release management |
+| 🤖 Copilot Studio Architecture | Enterprise agent design and governance |
+| 🗄 Dataverse Data Modeling | Schema design, relationships, and performance |
+| 🔒 Security & Compliance Controls | DLP, RBAC, conditional access, and auditing |
+| 📊 Monitoring & Operational Telemetry | CoE toolkit, alerting, and observability |
+
+All content is version-controlled, structured, and continuously refined.
+
+---
+
+## 🏗 The SCALE-OPS Framework
+
+At the core of this platform is the **SCALE-OPS Framework**:
+
+!!! info "SCALE-OPS"
+    A structured operating model for governing and scaling Microsoft Power Platform in complex enterprise ecosystems.
+
+| Letter | Pillar | Focus |
+|--------|--------|-------|
+| **S** | Stewardship | Ownership, accountability, and governance roles |
+| **C** | Containment | Environment isolation and tenant boundaries |
+| **A** | Automation | Pipeline automation and policy enforcement |
+| **L** | Lifecycle | App lifecycle, versioning, and deprecation |
+| **E** | Enablement | Training, CoE, and citizen development |
+| **O** | Operations | Day-to-day monitoring and support |
+| **P** | Performance | Capacity, optimization, and scalability |
+
+[Explore the SCALE-OPS Framework →](scale-ops/index.md){ .md-button .md-button--primary }
+
+---
+
+## 📚 Implementation First
+
+This platform prioritizes:
+
+- ✅ Architecture clarity over marketing language
+- ✅ Operational reality over theoretical models
+- ✅ Security by design
+- ✅ Governance that scales
+
+If you're managing multiple environments, audit constraints, or high-impact business workloads — this platform is built for you.
+
+---
+
+## 🚀 Why This Exists
+
+> Power Platform adoption scales quickly.
+> Governance maturity often does not.
+
+PowerPlatform.wiki exists to close that gap — with structured, field-tested guidance for enterprise scale.
+
+---
+
+## 📌 Getting Started
 
 <div class="grid cards" markdown>
 
-- :material-application: **Power Apps**
+-   :material-map-outline: **SCALE-OPS Overview**
 
-    Build canvas and model-driven apps without writing full code.
+    Start here to understand the governing framework behind all content on this platform.
 
-- :material-autorenew: **Power Automate**
+    [Read the Overview →](scale-ops/index.md)
 
-    Automate repetitive tasks and business processes with cloud and desktop flows.
+-   :material-server-network: **Environment Strategy**
 
-- :material-chart-bar: **Power BI**
+    Learn how to structure environments for isolation, lifecycle, and scalability.
 
-    Turn raw data into interactive dashboards and reports.
+    [Explore Environments →](governance/environment-strategy.md)
 
-- :material-web: **Power Pages**
+-   :material-pipe: **DevOps & ALM Patterns**
 
-    Create external-facing business websites quickly and securely.
+    Implement pipelines, branching strategies, and release management for Power Platform.
 
-- :material-robot: **Copilot Studio**
-
-    Build and deploy AI-powered copilots and chatbots.
+    [View ALM Patterns →](devops/alm-patterns.md)
 
 </div>
 
 ---
 
-## Getting Started
-
-| Topic | Description |
-|---|---|
-| [Power Apps Basics](#) | Canvas vs model-driven, licensing, and your first app |
-| [Power Automate Flows](#) | Cloud flows, desktop flows, and approvals |
-| [Power BI Reports](#) | Connecting data, building visuals, and publishing |
-| [Copilot Studio](#) | Building copilots, topics, and integrations |
-| [Dataverse](#) | Tables, relationships, security roles, and solutions |
-
----
-
-## About This Wiki
-
-PowerPlatform Wiki is an open community project. Content is contributed by Power Platform practitioners and is not officially affiliated with Microsoft.
-
-Found an error or want to contribute? [Open an issue or pull request](https://github.com/murarka-kunal/powerplatform-wiki) on GitHub.
+*This is a living knowledge platform. It evolves with the platform ecosystem.*
