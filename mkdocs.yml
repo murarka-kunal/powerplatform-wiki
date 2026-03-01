@@ -1,6 +1,6 @@
 site_name: PowerPlatform Wiki
 site_url: https://powerplatform.wiki
-site_description: A community wiki for Microsoft Power Platform — Power Apps, Power Automate, Power BI, Power Pages, and Copilot Studio.
+site_description: A structured knowledge platform for enterprise-grade Microsoft Power Platform governance, architecture, and scalable implementation.
 site_author: Kunal Murarka
 
 repo_name: murarka-kunal/powerplatform-wiki
@@ -27,16 +27,20 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.indexes
     - navigation.top
     - navigation.footer
     - search.highlight
     - search.suggest
     - content.code.copy
+    - toc.follow
   icon:
     repo: fontawesome/brands/github
 
 plugins:
   - search
+  - tags
+  - meta
 
 markdown_extensions:
   - admonition
@@ -53,3 +57,7 @@ markdown_extensions:
   - toc:
       permalink: true
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/murarka-kunal/powerplatform-wiki
