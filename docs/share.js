@@ -12,7 +12,6 @@ function injectShareButtons() {
   row.innerHTML =
     '<span class="pp-footer-built">Built by ' +
       '<a href="https://www.linkedin.com/in/kunalmurarka/" target="_blank" rel="noopener">Kunal Murarka</a>' +
-      '<a href="https://www.linkedin.com/in/kunalmurarka/" target="_blank" rel="noopener" class="pp-share-btn" title="LinkedIn Profile">in</a>' +
     '</span>' +
     '<span class="pp-footer-share-label">Share this page:' +
       '<a href="https://twitter.com/intent/tweet?url=' + url + '" target="_blank" rel="noopener" class="pp-share-btn" title="Share on X">𝕏</a>' +
