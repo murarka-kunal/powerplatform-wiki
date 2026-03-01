@@ -36,6 +36,6 @@ jobs:
       - name: Sync files via rsync
         run: |
           rsync -avz --delete \
-            -e "ssh -o StrictHostKeyChecking=no -p 22" \
+            -e "ssh -o StrictHostKeyChecking=no -p 65002" \
             ./site/ \
             ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }}:public_html/
