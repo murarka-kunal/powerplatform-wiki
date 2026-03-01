@@ -57,3 +57,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/murarka-kunal/powerplatform-wiki
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/kunalmurarka/
+      name: Kunal Murarka on LinkedIn
+
+copyright: Built by <a href="https://www.linkedin.com/in/kunalmurarka/" target="_blank" rel="noopener">Kunal Murarka</a>
