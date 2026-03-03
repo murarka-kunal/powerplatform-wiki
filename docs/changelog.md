@@ -1,3 +1,11 @@
+---
+title: Changelog
+description: A running history of updates, additions, and structural changes to PowerPlatform.wiki.
+tags:
+  - changelog
+  - updates
+---
+
 # Changelog
 
 ## 2026
