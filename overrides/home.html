@@ -11,6 +11,228 @@
 <meta name="twitter:description" content="A structured reference for enterprise-grade Microsoft Power Platform governance, architecture, and scalable implementation.">
 {% endblock %}
 
+{% block styles %}
+{{ super() }}
+<style>
+  /* ── Design tokens ── */
+  .home-page {
+    --accent:   #2f81f7;
+    --accent2:  #58a6ff;
+    --surface:  #161b22;
+    --surface2: #1c2128;
+    --border:   #30363d;
+    --text:     #e6edf3;
+    --muted:    #8b949e;
+    --green:    #3fb950;
+    --mono:     'IBM Plex Mono', monospace;
+    --sans:     'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+  }
+
+  /* Strip MkDocs content padding */
+  .md-content__inner:has(.home-page) { padding: 0 !important; margin: 0 !important; }
+
+  /* Reset link styles inside home page */
+  .home-page a { color: inherit; text-decoration: none; }
+
+  /* ── Hero ── */
+  .home-page .hero {
+    padding: 5rem 2rem 4rem;
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .home-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%; transform: translateX(-50%);
+    width: 600px; height: 300px;
+    background: radial-gradient(ellipse at center, rgba(47,129,247,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .home-page .hero-tag {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--accent);
+    border: 1px solid rgba(47,129,247,0.3);
+    background: rgba(47,129,247,0.06);
+    padding: 0.25rem 0.75rem;
+    border-radius: 2px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .home-page .hero-tag::before { content: '●'; font-size: 0.5rem; color: var(--green); }
+  /* !important needed to beat .md-typeset h1 / h2 */
+  .home-page h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.04em !important;
+    line-height: 1.1 !important;
+    margin-bottom: 1.25rem !important;
+    color: var(--text) !important;
+  }
+  .home-page h1 .domain { color: var(--accent2); }
+  .home-page h2 {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.03em !important;
+    margin-bottom: 0.5rem !important;
+    color: var(--text) !important;
+  }
+  .home-page .hero-sub {
+    font-size: 1.05rem;
+    color: var(--muted);
+    max-width: 580px;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+  }
+  .home-page .hero-ctas { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .home-page .btn-primary {
+    background: var(--accent);
+    color: #fff !important;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none !important;
+    transition: background 0.2s, transform 0.1s;
+    display: inline-block;
+  }
+  .home-page .btn-primary:hover { background: var(--accent2); transform: translateY(-1px); }
+
+  /* ── Divider ── */
+  .home-page hr.divider {
+    max-width: 860px; margin: 0 auto;
+    border: none !important;
+    border-top: 1px solid var(--border) !important;
+    height: 0 !important;
+    background: none !important;
+  }
+
+  /* ── Sections ── */
+  .home-page .section { max-width: 860px; margin: 0 auto; padding: 3rem 2rem; }
+  .home-page .section-label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+  .home-page .section-desc {
+    color: var(--muted);
+    font-size: 0.925rem;
+    margin-bottom: 2rem !important;
+    max-width: 560px;
+  }
+
+  /* ── Audience pills ── */
+  .home-page .audience-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .home-page .pill {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    padding: 0.35rem 0.85rem;
+    border-radius: 2px;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .home-page .pill:hover { border-color: var(--accent); color: var(--text); }
+
+  /* ── Domain grid ── */
+  .home-page .domain-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .home-page .domain-card {
+    background: var(--surface);
+    padding: 1.25rem 1.5rem;
+    transition: background 0.2s;
+    cursor: pointer;
+  }
+  .home-page .domain-card:hover { background: var(--surface2); }
+  .home-page .domain-icon { font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .home-page .domain-title { font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem; color: var(--text); }
+  .home-page .domain-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+
+  /* ── SCALE-OPS ── */
+  .home-page .scaleops-banner {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .home-page .scaleops-banner strong { color: var(--text); font-style: normal; }
+  .home-page .scaleops-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.75rem;
+  }
+  .home-page .scaleops-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    transition: border-color 0.2s, background 0.2s;
+    display: block;
+  }
+  .home-page .scaleops-card:hover { border-color: var(--accent); background: var(--surface2); }
+  .home-page .scaleops-letter {
+    font-family: var(--mono);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--accent2);
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+  .home-page .scaleops-name { font-weight: 600; font-size: 0.85rem; margin-bottom: 0.2rem; }
+  .home-page .scaleops-focus { font-size: 0.75rem; color: var(--muted); }
+
+  /* ── Getting started ── */
+  .home-page .start-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+  .home-page .start-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.5rem;
+    transition: border-color 0.2s;
+    display: block;
+  }
+  .home-page .start-card:hover { border-color: var(--accent); }
+  .home-page .start-num {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+  .home-page .start-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .home-page .start-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+  .home-page .start-link { font-size: 0.78rem; color: var(--accent2); margin-top: 0.75rem; display: block; }
+</style>
+{% endblock %}
+
 {% block content %}
 <div class="home-page">
 
