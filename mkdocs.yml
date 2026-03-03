@@ -6,7 +6,6 @@ site_author: Kunal Murarka
 
 theme:
   name: material
-  custom_dir: overrides
   palette:
     scheme: slate
     primary: custom
@@ -28,7 +27,6 @@ theme:
     repo: fontawesome/brands/github
 
 extra_css:
-  - theme.css
   - custom.css
 
 extra_javascript:
@@ -60,7 +58,7 @@ extra:
   generator: false
 
 nav:
-  - Home: index.md
+  - Home: index.html
   - SCALE-OPS:
     - Overview: scale-ops/index.md
     - Stewardship: scale-ops/stewardship.md
