@@ -42,6 +42,9 @@
   --md-shadow-z3: 0 0 0 1px #30363d, 0 16px 32px rgba(1,4,9,0.5);
 }
 
+/* Widen content grid to ~1200px total (content column ~740px) */
+.md-grid { max-width: 75rem; }
+
 /* Sidebar and nav background */
 [data-md-color-scheme="slate"] .md-sidebar {
   background-color: #0d1117;
