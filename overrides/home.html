@@ -122,19 +122,32 @@
     max-width: 560px;
   }
 
-  /* ── Audience pills ── */
-  .home-page .audience-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; }
-  .home-page .pill {
-    font-family: var(--mono);
-    font-size: 0.78rem;
-    color: var(--muted);
-    border: 1px solid var(--border);
-    background: var(--surface);
-    padding: 0.35rem 0.85rem;
-    border-radius: 2px;
-    transition: border-color 0.2s, color 0.2s;
+  /* ── Audience cards ── */
+  .home-page .audience-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
-  .home-page .pill:hover { border-color: var(--accent); color: var(--text); }
+  .home-page .audience-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.5rem;
+    transition: border-color 0.2s ease, background 0.2s ease;
+    display: block;
+  }
+  .home-page .audience-card:hover { border-color: #3d52a0; background: var(--surface2); }
+  .home-page .audience-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+  .home-page .audience-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.4rem; color: var(--text); }
+  .home-page .audience-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.5; margin-bottom: 0.75rem; }
+  .home-page .audience-cta { font-size: 0.78rem; color: #7091e6; display: block; }
+  @media (max-width: 600px) {
+    .home-page .audience-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── Suppress MkDocs chrome on home page ── */
+  .md-footer__inner { display: none !important; }
+  .md-top { display: none !important; }
 
   /* ── Domain grid ── */
   .home-page .domain-grid {
@@ -240,14 +253,33 @@
 <!-- Purpose -->
 <section class="section">
   <div class="section-label">// Who This Is For</div>
-  <h2>Built for Platform Practitioners</h2>
-  <p class="section-desc">Implementation-focused guidance for the teams responsible for governing and scaling Power Platform at enterprise scale.</p>
+  <h2>Who Is This For?</h2>
+  <p class="section-desc">Find guidance tailored to your role in the Power Platform ecosystem.</p>
   <div class="audience-grid">
-    <div class="pill">Enterprise Architects</div>
-    <div class="pill">Platform Owners</div>
-    <div class="pill">Governance &amp; Security Leads</div>
-    <div class="pill">DevOps Engineers</div>
-    <div class="pill">Citizen Dev Program Managers</div>
+    <a href="/governance/" class="audience-card">
+      <div class="audience-icon">👔</div>
+      <div class="audience-title">Business Leader</div>
+      <div class="audience-desc">Understand governance models, risk frameworks, and platform ROI for executive decision-making.</div>
+      <span class="audience-cta">Explore Governance →</span>
+    </a>
+    <a href="/scale-ops/" class="audience-card">
+      <div class="audience-icon">⚙️</div>
+      <div class="audience-title">Admin / CoE Lead</div>
+      <div class="audience-desc">Manage tenant configuration, DLP policies, admin roles, and CoE operations at scale.</div>
+      <span class="audience-cta">Explore SCALE-OPS →</span>
+    </a>
+    <a href="/devops/" class="audience-card">
+      <div class="audience-icon">🔨</div>
+      <div class="audience-title">Maker / Developer</div>
+      <div class="audience-desc">Build with confidence using ALM patterns, environment strategy, and Dataverse best practices.</div>
+      <span class="audience-cta">Explore DevOps &amp; ALM →</span>
+    </a>
+    <a href="/scale-ops/" class="audience-card">
+      <div class="audience-icon">🔍</div>
+      <div class="audience-title">Evaluating Power Platform</div>
+      <div class="audience-desc">Get a structured view of enterprise readiness, scaling patterns, and governance considerations.</div>
+      <span class="audience-cta">Start Here →</span>
+    </a>
   </div>
 </section>
 

@@ -121,9 +121,9 @@
   width: 18px; height: 18px;
   border: 1px solid #30363d;
   border-radius: 3px;
-  color: #8b949e;
+  color: #3d52a0;
   text-decoration: none !important;
-  transition: border-color 0.2s, color 0.2s;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 .pp-share-btn svg { width: 9px; height: 9px; fill: currentColor; }
-.pp-share-btn:hover { border-color: #2f81f7 !important; color: #e6edf3 !important; }
+.pp-share-btn:hover { border-color: #3d52a0 !important; color: #7091e6 !important; transform: translateY(-1px); }
