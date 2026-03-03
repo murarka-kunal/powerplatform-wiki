@@ -6,6 +6,7 @@ site_author: Kunal Murarka
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     scheme: slate
     primary: custom
@@ -58,7 +59,7 @@ extra:
   generator: false
 
 nav:
-  - Home: index.html
+  - Home: index.md
   - SCALE-OPS:
     - Overview: scale-ops/index.md
     - Stewardship: scale-ops/stewardship.md
