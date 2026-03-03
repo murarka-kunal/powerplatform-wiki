@@ -61,19 +61,9 @@
     border-radius: 2px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   .home-page .hero-tag::before { content: '●'; font-size: 0.5rem; color: var(--green); }
-  /* !important needed to beat .md-typeset h1 / h2 */
-  .home-page h1 {
-    font-size: clamp(2rem, 5vw, 3.2rem) !important;
-    font-weight: 700 !important;
-    letter-spacing: -0.04em !important;
-    line-height: 1.1 !important;
-    margin-bottom: 1.25rem !important;
-    color: var(--text) !important;
-  }
-  .home-page h1 .domain { color: var(--accent2); }
   .home-page h2 {
     font-size: 1.5rem !important;
     font-weight: 700 !important;
@@ -82,12 +72,12 @@
     color: var(--text) !important;
   }
   .home-page .hero-sub {
-    font-size: 1.05rem;
+    font-size: 1.3rem;
     color: var(--muted);
     max-width: 580px;
     line-height: 1.7;
-    margin-bottom: 2.5rem;
-    font-weight: 300;
+    margin-bottom: 2rem;
+    font-weight: 400;
   }
   .home-page .hero-ctas { display: flex; gap: 0.75rem; flex-wrap: wrap; }
   .home-page .btn-primary {
@@ -239,7 +229,6 @@
 <!-- Hero -->
 <section class="hero">
   <div class="hero-tag">Enterprise Knowledge Platform</div>
-  <h1><span class="domain">PowerPlatform</span>.wiki</h1>
   <p class="hero-sub">A structured reference for enterprise-grade Microsoft Power Platform governance, architecture, and scalable implementation. Built for real-world environments — not conceptual blogs.</p>
   <div class="hero-ctas">
     <a href="/scale-ops/" class="btn-primary">Explore SCALE-OPS Framework</a>
