@@ -24,6 +24,7 @@ theme:
     - search.suggest
     - content.code.copy
     - toc.follow
+  favicon: assets/favicon.svg
   icon:
     repo: fontawesome/brands/github
 
